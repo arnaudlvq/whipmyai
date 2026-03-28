@@ -1,0 +1,44 @@
+{
+  "name": "whipmyai",
+  "displayName": "WhipMyAI",
+  "description": "The #1 performance-enhancing tool for developers who prompt too slow. A whip crack on every Enter. macOS only.",
+  "version": "1.2.0",
+  "publisher": "uniformdelta",
+  "license": "MIT",
+  "icon": "logo.png",
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "keywords": ["whip", "sound", "enter", "fun", "ai", "copilot", "crack", "audio"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "whipmyai.toggle",
+        "title": "WhipMyAI: Toggle on/off"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "whipmyai.submitChat",
+        "key": "enter",
+        "when": "inChatInput"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uniformdelta/whipmyai"
+  },
+  "bugs": {
+    "url": "https://github.com/uniformdelta/whipmyai/issues"
+  },
+  "homepage": "https://github.com/uniformdelta/whipmyai#readme",
+  "devDependencies": {}
+}

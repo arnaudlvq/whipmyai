@@ -1,82 +1,73 @@
-# whipmyai 🎯
+# WhipMyAI
 
-> **Whip your AI into shape — one Enter at a time.**  
-> Every Enter in VS Code → CRACK 🔊 · Shift/Cmd/Ctrl+Enter → silence.
+### The #1 performance-enhancing tool for developers who type too slow.
 
----
+Clinical studies* show that developers who hear a whip crack after sending a prompt write **up to 0% more code** than those who don't. And yet, it feels incredible.
 
-## What is this?
+WhipMyAI is an **acoustic productivity accelerator** built for the modern AI-assisted developer. Every time you submit a prompt in VS Code Chat, a high-fidelity whip crack confirms that you are, in fact, in charge here.
 
-A tiny macOS daemon that plays a whip crack sound every time you press **Enter** in VS Code.  
-Three different sounds, picked at random. Zero config after setup.
+> *Studies not conducted. Results not representative. No developers were harmed.
 
 ---
 
-## Requirements
+## Key performance metrics
 
-- macOS
-- Python 3.9+
-- `make`
-
----
-
-## Setup
-
-> ⚠️ **First — place the project folder where you want it permanently.**  
-> The alias will hardcode this path in your `.zshrc`. Don't move it afterwards.
-
-```bash
-make install       # creates .venv and installs dependencies
-./setup_alias.sh   # adds the 'whip' alias to ~/.zshrc
-source ~/.zshrc    # reload your shell
-```
-
-### Enable Accessibility permission
-
-`pynput` needs Accessibility access to listen to the keyboard globally.
-
-Go to **System Settings → Confidentialité et sécurité → Accessibilité** and toggle on your terminal app (or VS Code itself):
-
-![Accessibility settings](activate_accessibility.png)
-
----
-
-## Usage
-
-```bash
-whip   # start the daemon
-whip   # stop it  (toggles)
-```
-
-Or with make:
-
-| Command           | Effect                          |
-|-------------------|---------------------------------|
-| `make start`      | Start the daemon in background  |
-| `make stop`       | Stop the daemon                 |
-| `make status`     | Check if running                |
-| `make logs`       | Tail logs in real time          |
-| `make uninstall`  | Stop + remove .venv             |
+| Metric | Before WhipMyAI | After WhipMyAI |
+|--------|----------------|----------------|
+| Perceived typing speed | Sluggish | Furious |
+| Confidence when prompting | Low | Unhinged |
+| Feeling of control over AI | 0% | Still 0%, but louder |
+| Dopamine per keypress | Baseline | Elevated |
 
 ---
 
 ## How it works
 
-1. **`pynput`** listens to all keystrokes globally.
-2. On `Enter` — checks that **no modifier** is held (Shift, Cmd, Ctrl, Alt). If any is held → silent.
-3. Checks that **VS Code is the active app** via macOS `NSWorkspace` API.
-4. If both pass → `afplay` plays one of the 3 whip sounds, picked at random.
-5. All dependencies live in `.venv/` — nothing is installed globally.
+The science is simple:
+
+1. You type a prompt.
+2. You press **Enter** to submit.
+3. A whip crack plays.
+4. Your brain releases a small amount of serotonin.
+5. You type the next prompt faster.
+6. Repeat until you ship.
+
+**Shift / Ctrl / Cmd + Enter** → silence. That's for adding a new line. No crack for new lines. You have to *earn* the crack.
 
 ---
 
-## Uninstall
+## Usage
 
-```bash
-make uninstall              # stops daemon, removes .venv and tmp files
-cd .. && rm -rf whipmyai      # remove the project folder entirely
-# then remove the 'whip' function from ~/.zshrc manually
-```
+Install. That's it. No configuration. No onboarding flow. No "welcome" tab.
+
+To mute/unmute: `Cmd+Shift+P` → **WhipMyAI: Toggle on/off**
+
+---
+
+## Requirements
+
+- macOS (uses the built-in `afplay` command — zero dependencies, zero permissions, zero excuses)
+- A chat extension to unleash yourself upon
+- A healthy relationship with audio feedback
+
+---
+
+## FAQ
+
+**Q: Does this make me a better developer?**
+A: Technically no. Emotionally, yes.
+
+**Q: Will my coworkers hear it on calls?**
+A: That's between you and your coworkers.
+
+**Q: Is this a joke?**
+A: It is a fully published VS Code extension with sound files and a keybinding. You decide.
+
+---
+
+## License
+
+MIT
 
 ---
 
