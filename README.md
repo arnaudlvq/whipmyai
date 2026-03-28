@@ -77,3 +77,9 @@ make uninstall              # stops daemon, removes .venv and tmp files
 cd .. && rm -rf whipmyai      # remove the project folder entirely
 # then remove the 'whip' function from ~/.zshrc manually
 ```
+
+---
+
+## Credits
+
+Whip sounds by [Universfield](https://pixabay.com/users/universfield-28281460/) via [Pixabay](https://pixabay.com).
