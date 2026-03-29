@@ -1,8 +1,8 @@
 {
   "name": "whipmyai",
   "displayName": "WhipMyAI",
-  "description": "The #1 performance-enhancing tool for developers who prompt too slow. A whip crack on every Enter. macOS only.",
-  "version": "1.2.0",
+  "description": "A whip crack every time you send a prompt. Because you're in charge.",
+  "version": "1.2.1",
   "publisher": "uniformdelta",
   "license": "MIT",
   "icon": "logo.png",

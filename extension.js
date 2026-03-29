@@ -13,7 +13,30 @@ let sounds;
 
 function playWhip() {
     const sound = sounds[Math.floor(Math.random() * sounds.length)];
-    spawn('afplay', [sound], { detached: true, stdio: 'ignore' }).unref();
+    let cmd, args;
+
+    switch (process.platform) {
+        case 'darwin':
+            cmd = 'afplay';
+            args = [sound];
+            break;
+        case 'win32': {
+            const uri = 'file:///' + sound.replace(/\\/g, '/');
+            cmd = 'powershell';
+            args = [
+                '-NoProfile', '-NonInteractive', '-WindowStyle', 'Hidden', '-Command',
+                `Add-Type -AssemblyName presentationCore; $p = New-Object System.Windows.Media.MediaPlayer; $p.Open([uri]'${uri}'); $p.Play(); Start-Sleep 3`
+            ];
+            break;
+        }
+        default:
+            // Linux — requires ffplay (part of ffmpeg)
+            cmd = 'ffplay';
+            args = ['-nodisp', '-autoexit', '-loglevel', 'quiet', sound];
+            break;
+    }
+
+    spawn(cmd, args, { detached: true, stdio: 'ignore' }).unref();
 }
 
 /**
