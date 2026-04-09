@@ -29,6 +29,12 @@
         "command": "whipmyai.submitChat",
         "key": "enter",
         "when": "inChatInput"
+      },
+      {
+        "command": "whipmyai.submitChat",
+        "key": "cmd+enter",
+        "mac": "cmd+enter",
+        "when": "inChatInput"
       }
     ]
   },

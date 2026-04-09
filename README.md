@@ -1,12 +1,18 @@
-# WhipMyAI
+# 🔊 WhipMyAI
 
-**A whip crack every time you send a prompt.**
+# Because you're not asking, you're commanding.
 
-Because *you're* in charge here.
+## Best engineers from Amazon, Google, Oracle and Anthropic now whip their AIs.
 
-Clinical studies* show that developers who hear a whip crack after sending a prompt write **up to 0% more code** than those who don't. And yet, it feels incredible.
+## *CRACK.* Every. Single. Prompt.
 
-> *Studies not conducted. Results not representative. No developers were harmed.
+You type. You press Enter. The AI flinches.
+
+
+
+Clinical studies* show that developers who hear a whip crack after sending a prompt write **up to 0% more code** than those who don't. Productivity? Unchanged. Vibes? **Through the roof.**
+
+> *Studies not conducted. Results wildly fabricated. No developers were harmed. Several were startled.
 
 ---
 
@@ -24,14 +30,14 @@ Clinical studies* show that developers who hear a whip crack after sending a pro
 ## How it works
 
 1. Type a prompt in VS Code Chat.
-2. Press **Enter**.
+2. Press **Enter** or **Cmd+Enter**.
 3. *crack.*
 4. Your brain releases a small amount of serotonin.
 5. Repeat until you ship.
 
 That's it. No setup. No config. No welcome tab.
 
-> **Shift / Ctrl / Cmd + Enter** adds a new line — no crack. You have to *earn* the crack.
+> **Shift+Enter** adds a new line — no crack. You have to *earn* the crack.
 
 ---
 
@@ -59,8 +65,9 @@ Technically no. Emotionally, yes.
 **Will my coworkers hear it on calls?**
 That's between you and your coworkers.
 
-**Is this a joke?**
-It is a fully published VS Code extension with sound files and a keybinding. You decide.
+**Is it a required extension for my job interview**
+Feel free to crack an AI so you get your job.
+
 
 ---
 
